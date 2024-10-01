@@ -9,7 +9,7 @@
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="ejercicios.css" title="Color">
-</hea
+</head>
 
 <body>
   <h1>Gestos de manos</h1>
