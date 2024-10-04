@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,7 +5,7 @@
   <title>
     Tirada de dados.
     Matrices (1). Sin formularios.
-    Escribe aquí tu nombre
+    Fran Morales
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="ejercicios.css" title="Color">
@@ -18,13 +17,21 @@
   <p>Actualice la página para mostrar una nueva tirada.</p>
 
 <?php
-
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+  $dados = [
+    "1"=> mt_rand(2,6),
+    "2"=> mt_rand(2,6),
+    "3"=> mt_rand(2,6)
+  ];
 
 ?>
-
+<img src="img/<?php echo $dados[1] ?>.svg" alt=""/>
+<img src="img/<?php echo $dados[2] ?>.svg" alt=""/>
+<img src="img/<?php echo $dados[3] ?>.svg" alt=""/>
+<?php
+  printf("<p> Los valores obtenidos son: %d, %d, %d </p>", $dados[1], $dados[2], $dados[3]);
+?>
   <footer>
-    <p>Escribe aquí tu nombre</p>
+    <p>Fran Morales</p>
   </footer>
 </body>
 </html>
